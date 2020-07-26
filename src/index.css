@@ -7,7 +7,61 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Wheel-box{
+  display: flex;
+  height: 125px;
+  width: 150px;
+  background-color: grey;
+  justify-items: center;
+  margin: 25% 0% 0% 45%;
+}
+.wheel-outerring{
+  background-color: white;
+  display: flex;
+  width: 81px;
+  height: 84px;
+  border-radius: 60%;
+  margin: 0px 16px;
+  padding: 20px;
+}
+
+.wheel-innerring{
+  background-color: grey;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin: 15px;
+}
+.Menu{
+  margin-top: -25px;
+  margin-left: 5px;
+  font-weight: 400;
+}
+.action-next{
+  height: 22px;
+  width: 30px;
+  margin: 15px 50px;
+  position: absolute;
+}
+.action-back{
+  height: 22px;
+  width: 30px;
+  margin: 15px -32px;
+  position: absolute;
+}
+.action-play{
+  height: 22px;
+  width: 30px;
+  margin: 57px 9px;
+  position: absolute;
+}
+.screen-container{
+  display: flex;
+  height: 135.5px;
+  width: 149px;
+  background-color: #f3f0f1;
+  position: absolute;
+  margin: -9% 0px 0px 45%;
+  border: 1px solid lightgrey;
 }
