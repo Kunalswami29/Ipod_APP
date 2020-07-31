@@ -60,8 +60,30 @@ body {
   display: flex;
   height: 135.5px;
   width: 149px;
-  background-color: #f3f0f1;
-  position: absolute;
-  margin: -9% 0px 0px 45%;
-  border: 1px solid lightgrey;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTJfB9uk8Wcz5xTqUwO5Y0sf_aHLadXgTre4w&usqp=CAU");
+  position: fixed;
+  margin: -8.8% 0px 0px 45%;
+  border: 0.5px solid lightgrey;
+}
+.list-box{
+  width:60px;
+  background-color: #edebef;
+  box-shadow:  white;
+  border: 1px solid white;
+  height:99%
+}
+.card-list{
+  height: 22px;
+  margin-bottom: 5px;
+  width: 98%;
+  font-size: 15px;
+  font-weight: 400; 
+}
+.title{
+  margin-top: 0;
+  margin-bottom: 3%;
+  font-size: 15px;
+  font-weight: bold;
+  color: #6d2c89;
+  text-align: center;
 }

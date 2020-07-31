@@ -1,15 +1,21 @@
 import React from 'react';
 import Wheel from './Wheel';
-import Screen from './Screen'
+import Screen from './Screen';
 
-function App() {
-  return (
-    <div className="app-container">
-       <Screen/>
-       <Wheel/>
-    </div>
-    
-  )
+class App extends React.Component {
+  constructor(){
+  }
+  render() {
+    return (
+      <div>
+         <Screen />
+         <Wheel 
+            handleZesture={this.handleZesture}
+         />
+      </div>
+    );
+  }
 }
+
 
 export default App;
