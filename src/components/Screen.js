@@ -1,20 +1,24 @@
 import React from "react";
+
+
 class Screen extends React.Component {
   render() {
+    const { showSetting ,showMusic ,showHome ,showGame } = this.props    // rendering the props
     return (
-      <div className="screen-container">
+      // this is the screen and the list container
+      <div className="screen-container"> 
           <div className="list-box">
                 <p className='title'>Ipod.js</p>
-                <div className='card-list' onChange={this.handlechange}>
+                <div className={`wheel-list ${showHome ?'active':''}`} >
                     Home
                 </div>
-                <div className='card-list'>
+                <div className={`wheel-list ${showMusic ?'active':''}`}>
                     Music
                 </div>
-                <div className='card-list'>
+                <div className={`wheel-list ${showGame ?'active':''}`}>
                     Game
                 </div>
-                <div className='card-list'>
+                <div className={`wheel-list ${showSetting ?'active':''}`}>
                     Settings
                 </div>
           </div>

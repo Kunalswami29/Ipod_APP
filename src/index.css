@@ -14,6 +14,8 @@ body {
   background-color: grey;
   justify-items: center;
   margin: 25% 0% 0% 45%;
+  border: 1.5px solid black;
+
 }
 .wheel-outerring{
   background-color: white;
@@ -27,33 +29,33 @@ body {
 
 .wheel-innerring{
   background-color: grey;
-  display: flex;
   width: 50px;
   height: 50px;
   border-radius: 50px;
   margin: 15px;
+  position: absolute;
 }
 .Menu{
-  margin-top: -25px;
-  margin-left: 5px;
+  margin-top: -10px;
+  margin-left: 20px;
   font-weight: 400;
 }
 .action-next{
   height: 22px;
   width: 30px;
-  margin: 15px 50px;
+  margin: 30px 65px;
   position: absolute;
 }
 .action-back{
   height: 22px;
   width: 30px;
-  margin: 15px -32px;
+  margin: 30px -20px;
   position: absolute;
 }
 .action-play{
   height: 22px;
   width: 30px;
-  margin: 57px 9px;
+  margin: 70px 25px;
   position: absolute;
 }
 .screen-container{
@@ -61,9 +63,10 @@ body {
   height: 135.5px;
   width: 149px;
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTJfB9uk8Wcz5xTqUwO5Y0sf_aHLadXgTre4w&usqp=CAU");
-  position: fixed;
-  margin: -8.8% 0px 0px 45%;
-  border: 0.5px solid lightgrey;
+  background-size: cover;
+  position: absolute;
+  margin: -9% 0px 0px 45%;
+  border: 2px solid black;
 }
 .list-box{
   width:60px;
@@ -72,18 +75,95 @@ body {
   border: 1px solid white;
   height:99%
 }
-.card-list{
+.wheel-list{
   height: 22px;
   margin-bottom: 5px;
   width: 98%;
-  font-size: 15px;
-  font-weight: 400; 
+  font-size: 12px;
+  font-weight: 500; 
 }
 .title{
   margin-top: 0;
-  margin-bottom: 3%;
+  margin-bottom: 4%;
   font-size: 15px;
   font-weight: bold;
   color: #6d2c89;
   text-align: center;
 }
+.active{
+  background-color: #c6abcc;
+  color: black;
+}
+.setting{
+  display: flex;
+  height: 135.5px;
+  width: 149px;
+  position: absolute;
+  margin: -8.8% 0px 0px 45%;
+  border: 2px solid black;
+}
+.setting-pic{
+  height: 85px;
+  width:85px;
+  margin:30px;
+}
+.game{
+  display: flex;
+  height: 135.5px;
+  width: 149px;
+  background-color: #ebebeb;
+  position: absolute;
+  margin: -8.8% 0px 0px 45%;
+  border: 2px solid black;}
+.game-pic{
+  height: 85px;
+  width:85px;
+  margin:30px;
+}
+.music{
+  display: flex;
+  height: 135.5px;
+  width: 149px;
+  background-color: white;
+  position: absolute;
+  margin: -8.8% 0px 0px 45%;
+  border: 2px solid black;}
+.music-pic{
+  height: 85px;
+  width:85px;
+  margin: 30px;
+}
+
+.home{
+  display: flex;
+  height: 135.5px;
+  width: 149px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQVTHMfFFkYNuVzoltH2gFDB7S3gZSqS5KMLA&usqp=CAU");
+  background-size: cover;
+  position: absolute;
+  margin: -8.8% 0px 0px 45%;
+  border: 2px solid black;
+}
+
+.playlist{
+  display: flex;
+  height: 135.5px;
+  width: 149px;
+  background-color: white;
+  position: absolute;
+  margin: -8.8% 0px 0px 45%;
+  border: 2px solid black;
+}
+li{
+  list-style: none;
+}
+.song{
+  display: flex;
+  height: 135.5px;
+  width: 149px;
+  background-color: white;
+  position: absolute;
+  margin: -8.8% 0px 0px 45%;
+  border: 2px solid black;
+}
+
