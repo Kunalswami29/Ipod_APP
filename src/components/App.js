@@ -119,7 +119,7 @@ class App extends React.Component {
   render() {
     const { showComponent , showGame , showHome , showMusic , showSetting} = this.state
     return (
-      <div>
+      <div >
     
         {
           showComponent?showHome?<Home handleMenuClick={this.handleMenuClick}/> 
