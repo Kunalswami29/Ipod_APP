@@ -23,26 +23,27 @@ class Music extends React.Component {
   handleMovement= (e) => {
      // to check the angle
     const scope = this;
-    var angle = 0;
-    var region = new ZingTouch.Region(e.target);
+    var angle = 0; // setting the inital angle value
+    var region = new ZingTouch.Region(e.target); // seting the region to rotate
     region.bind(e.target , 'rotate',function(e){
-      console.log('last distance detail', e.detail.distanceFromLast);
+      console.log('prev distance detail', e.detail.distanceFromLast);
       console.log('rotaion details' , e.detail.distanceFromOrigin);
       angle = e.detail.distanceFromOrigin;
 
-      // Marking Artist
+      // Marking Artist active
       if(angle>0 && angle<110){
         scope.setState({
           showArtists:true
         });
       }
-      // Marking Song
+      // Marking Song active
       else if(angle>110 && angle<270){
         scope.setState({
           showArtists:false,
           showSong:true
         });
       }
+      //markin Playlist active
       else if(angle>270 && angle<330){
         scope.setState({
           showArtists:false,
@@ -74,7 +75,6 @@ class Music extends React.Component {
   }
   // function to handle enter click
   handleClick= () =>{
-      console.log('Enter is pressed');
       this.setState({showMusicComponent:true});
   }
 
@@ -88,8 +88,8 @@ class Music extends React.Component {
   }
   render() {
     const { showMusicComponent,showArtists,showPlaylist,showSong }=this.state
-    console.log('state',this.state)
     return (
+      // this is to manage the music componenet
       <div>
         { showMusicComponent?showArtists?<Artist /> 
           :showSong?<Song /> 

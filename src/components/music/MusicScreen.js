@@ -3,8 +3,7 @@ import React from "react";
 
 class MusicScreen extends React.Component {
     render() {
-        const { showArtists, showSong ,showPlaylist } = this.props 
-        // console.log('state',this.state) // rendering the props
+        const { showArtists, showSong ,showPlaylist } = this.props // rendering the props
         return (
             // this is the MusicScreen and the list container
             <div className="screen-container"> 

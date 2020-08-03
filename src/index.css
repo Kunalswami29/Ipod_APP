@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+/* this is the outer box */
 .Wheel-box{
   display: flex;
   height: 125px;
@@ -17,6 +17,7 @@ body {
   border: 1.5px solid black;
 
 }
+/* this is the white wheel part */
 .wheel-outerring{
   background-color: white;
   display: flex;
@@ -26,7 +27,7 @@ body {
   margin: 0px 16px;
   padding: 20px;
 }
-
+/* this is the enter wheel */
 .wheel-innerring{
   background-color: grey;
   width: 50px;
@@ -35,6 +36,7 @@ body {
   margin: 15px;
   position: absolute;
 }
+/* these four are for buttons section on wheel */
 .Menu{
   margin-top: -10px;
   margin-left: 20px;
@@ -58,16 +60,18 @@ body {
   margin: 70px 25px;
   position: absolute;
 }
+/* the display screen */
 .screen-container{
   display: flex;
   height: 135.5px;
   width: 149px;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTJfB9uk8Wcz5xTqUwO5Y0sf_aHLadXgTre4w&usqp=CAU");
+  background-image: url("./images/wall.jpeg");
   background-size: cover;
   position: absolute;
   margin: -9% 0px 0px 45%;
   border: 2px solid black;
 }
+/* for side list section */
 .list-box{
   width:60px;
   background-color: #edebef;
@@ -82,6 +86,7 @@ body {
   font-size: 12px;
   font-weight: 500; 
 }
+/* ttile of the List */
 .title{
   margin-top: 0;
   margin-bottom: 4%;
@@ -94,6 +99,7 @@ body {
   background-color: #c6abcc;
   color: black;
 }
+/* setting screen */
 .setting{
   display: flex;
   height: 135.5px;
@@ -107,6 +113,7 @@ body {
   width:85px;
   margin:30px;
 }
+/* game screen */
 .game{
   display: flex;
   height: 135.5px;
@@ -120,6 +127,7 @@ body {
   width:85px;
   margin:30px;
 }
+/* music screen */
 .music{
   display: flex;
   height: 135.5px;
@@ -133,23 +141,23 @@ body {
   width:85px;
   margin: 30px;
 }
-
+/* home screen */
 .home{
   display: flex;
   height: 135.5px;
   width: 149px;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQVTHMfFFkYNuVzoltH2gFDB7S3gZSqS5KMLA&usqp=CAU");
+  background-image: url("./images/home.jpeg");
   background-size: cover;
   position: absolute;
   margin: -8.8% 0px 0px 45%;
   border: 2px solid black;
 }
-
+/* playlist section */
 .playlist{
   display: flex;
   height: 135.5px;
   width: 149px;
-  background-color: white;
+  background-color: rgb(212, 111, 111);
   position: absolute;
   margin: -8.8% 0px 0px 45%;
   border: 2px solid black;
@@ -157,11 +165,12 @@ body {
 li{
   list-style: none;
 }
+/* this is for music component */
 .song{
   display: flex;
   height: 135.5px;
   width: 149px;
-  background-color: white;
+  background-color: wheat;
   position: absolute;
   margin: -8.8% 0px 0px 45%;
   border: 2px solid black;
